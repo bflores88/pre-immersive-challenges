@@ -1,3 +1,10 @@
 module.exports = function countByMultiples(length, x) {
-  // write your code in here
+  var newArray = [];
+  var iterations = length*x;
+  
+  for(var i=iterations; i>=x; i-=x){
+    newArray.push(i);
+  }
+  newArray.reverse();
+  return newArray;
 }
