@@ -1,3 +1,11 @@
 module.exports = function descendingOrder(number) {
-  // write code in here
+  if(typeof number !== 'number'){
+    return 'not a number!';
+  }
+
+  var toStr = number.toString();
+  var newArr = toStr.split('');
+  var mutate = newArr.sort().reverse().join('');
+  return mutate;
+
 }
